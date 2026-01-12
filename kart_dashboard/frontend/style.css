@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #0b0f1a;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Layout */
+#dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT PANEL */
+#left-panel {
+    width: 22%;
+    padding: 20px;
+    background: linear-gradient(180deg, #0e1a3a, #081024);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Data Boxes */
+.data-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid #1e90ff;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.data-box .label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #cfd9ff;
+}
+
+.data-box .value {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Emphasis Colors */
+.data-box.speed {
+    border-left-color: #ff2d2d;
+}
+
+.data-box.throttle {
+    border-left-color: #1e90ff;
+}
+
+.data-box.brake {
+    border-left-color: #ff2d2d;
+}
+
+/* CENTER PANEL */
+#center-panel {
+    width: 56%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background: #05070f;
+    border: 2px solid #1e90ff;
+    border-radius: 12px;
+}
+
+/* RIGHT PANEL */
+#right-panel {
+    width: 22%;
+    padding: 20px;
+    background: #0a122a;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kart Live Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="dashboard">
+
+    <div id="left-panel">
+    <div class="data-box speed">
+        <div class="label">SPEED</div>
+        <div class="value" id="speed">--</div>
+    </div>
+
+    <div class="data-box">
+        <div class="label">RPM</div>
+        <div class="value" id="rpm">--</div>
+    </div>
+
+    <div class="data-box throttle">
+        <div class="label">THROTTLE</div>
+        <div class="value" id="throttle">--</div>
+    </div>
+
+    <div class="data-box brake">
+        <div class="label">BRAKE</div>
+        <div class="value" id="brake">--</div>
+    </div>
+</div>
+
+
+    <div id="center-panel">
+        <canvas id="trackCanvas" width="500" height="500"></canvas>
+    </div>
+
+    <div id="right-panel">
+        <h2>Status</h2>
+        <div id="status">Connected</div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
